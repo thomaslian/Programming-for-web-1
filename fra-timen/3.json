@@ -1,0 +1,23 @@
+{
+    "navn" : "Thomas Lian Ødegaard",
+    "stilling" : "Student",
+    "adresse" : {
+        "gate" : "langata",
+        "nr" : 23,
+        "postnr" : "0001"
+    },
+    "emner" : [
+        {
+            "emnekode" : "imt1441",
+            "emnenavn" : "Programmering for web I"
+        },
+        {
+            "emnekode" : "imt2291",
+            "emnenavn" : "WWW-teknologi"
+        }
+    ],
+    "emner2" : [
+        "imt1441",
+        "imt2291"
+    ]
+}
