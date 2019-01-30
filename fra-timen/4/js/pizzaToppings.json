@@ -1,0 +1,52 @@
+[
+  {
+    "kategori": "Kjøtt",
+    "valg": [
+      "Biff",
+      "Fly Away Marinert Kylling",
+      "Tacokrydret kjøttdeig",
+      "Skinke",
+      "Pepperoni",
+      "Kjøttboller",
+      "Satay-marinert Kylling",
+      "Ekstra Ost",
+      "Bacon",
+      "Chorizo",
+      "Pepperbiff",
+      "Karrimarinerte Reker",
+      "Ventricina",
+      "Kyllingbryst BBQ"
+    ]
+  }, {
+    "kategori": "Grønnsaker",
+    "valg": [
+      "Frisk Rød Paprika",
+      "Tomater",
+      "Ananas",
+      "Purre",
+      "Jalapenopepper",
+      "Oliven",
+      "Cherrytomater",
+      "Rød løk",
+      "Aromasopp",
+      "Avocado",
+      "Pulled Oumph",
+      "Grønnkålmiks",
+      "Vegansk Chiliaioli"
+    ]
+  }, {
+    "kategori": "Annet",
+    "valg": [
+      "Peanøtter",
+      "Tortillachips",
+      "Hakket Koriander",
+      "Ekstra pizzasaus på pizza",
+      "Salsasaus på pizza",
+      "Barbequesaus på pizza",
+      "Sataysaus på pizza",
+      "Bearnaise på pizza",
+      "Bladpersille",
+      "Mozarella"
+    ]
+  }
+]

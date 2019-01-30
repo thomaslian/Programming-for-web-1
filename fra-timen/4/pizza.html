@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #valg {
+      width: 20em;
+      float: left;
+      height: 100vh;
+      overflow-y: auto;
+      margin-right: 1em;
+    }
+
+    summary>h2 {
+      display: inline;
+    }
+
+    details>input {
+      margin-left: 2em;
+    }
+
+    details {
+      margin: .5em
+    }
+
+    *:focus {
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sett sammen din egen pizza</h1>
+  <div id="valg"></div>
+  <div class="pizza"></div>
+  <script src="js/pizza.js" charset="utf-8"></script>
+</body>
+</html>
