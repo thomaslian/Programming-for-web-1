@@ -1,0 +1,22 @@
+[
+  {
+    "href": "index.html",
+    "html": "Oppgave 1",
+    "subject": "Lage menyer dynamisk"
+  },
+  {
+    "href": "oppgave2.html",
+    "html": "Oppgave 2",
+    "subject": "Dynamisk innhold på sider"
+  },
+  {
+    "href": "oppgave3.html",
+    "html": "Oppgave 3",
+    "subject": "Dynamisk innhold på sider, del 2"
+  },
+  {
+    "href": "oppgave4.html",
+    "html": "Oppgave 5",
+    "subject": "Dynamisk innhold på sider, del 3"
+  }
+]

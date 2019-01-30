@@ -1,0 +1,108 @@
+body {
+  display: grid;
+  grid-template-columns: auto 600px 200px auto;
+  grid-template-rows: 70px auto;
+}
+
+header {
+  grid-column: 2/3;
+  grid-row: 1/1;
+}
+
+nav {
+  grid-column: 3/3;
+  grid-row: 2/2;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+nav a.active {
+  background-color: #4CAF50; /* Add a green color to the "active/current" link */
+  color: white;
+}
+
+section {
+  grid-column: 2/2;
+  grid-row: 2/2;
+}
+
+img.zoomable {
+  height: 1em;
+}
+
+img.zoomable:hover {
+  height: 50px;
+  position: absolute;
+}
+
+textarea {
+  width: 80%;
+  height: 30vh;
+}
+
+textarea.listOnTheSide {
+  width: 60%;
+  float: left;
+}
+
+select {
+  width: 35%;
+  height: 30vh;
+  margin-left: 4%;
+}
+code {
+  background: lightgrey;
+  padding-left: .3em;
+  padding-right: 0.3em;
+}
+
+
+.studies {
+  list-style-type: none;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid #e8e8e8;
+  margin: 0;
+  padding: 0;
+}
+
+.studies li {
+  font-family: "open sans",arial,sans-serif;
+  line-height: 27px;
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8;
+  border-top: 1px solid transparent;
+  padding: 5px;
+}
+
+.studies li:hover {
+  border-bottom: 1px solid #61960b;
+  border-top: 1px solid #61960b;
+  background-color: #EEE;
+}
+
+.studies a {
+  color: #61960b;
+  font-size: 1.2em;
+  text-decoration: none;
+  line-height: 1.5em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+.studies span {
+  display: block;
+}

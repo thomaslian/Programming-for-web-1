@@ -1,0 +1,36 @@
+{
+  "img": "spitfire.jpeg",
+  "Specs": {
+    "Approximate Assembly Time": "Less than 1 Hour",
+    "Completion Level": "Bind-N-Fly Basic",
+    "Flaps": "Yes",
+    "Flying Weight": "53.5 oz (1515 g)",
+    "Length": "42.32 in (1075 mm)",
+    "Material": "Z-Foam",
+    "Minimum Required Radio": "6+ Channel",
+    "Minimum Speed Control": "40 Amp Brushless",
+    "Motor Size": "15BL Outrunner 850Kv",
+    "Propeller Size": "5-Blade, 10.5 x 8",
+    "Recommended Motor Battery": "2200mAh 3 Cell Li-Po",
+    "Retracts": "Yes",
+    "Spinner Size": "3 in",
+    "Wing Area": "416.9 sq in (26.9 Sq Dm)",
+    "Wingspan": "47.25 in (1200 mm)"
+  },
+  "Key Features":[
+"Optional SAFE® Select technology with flight envelope protection",
+"Advanced AS3X® technology delivers rock-solid handling",
+"Easy to complete, bolt-together final assembly",
+"Retractable, electric main landing gear installed",
+"Operational four-panel split flaps with servos installed",
+"6-channel control with a steerable tail wheel",
+"Spektrum™ 6-channel AR636A DSMX® receiver (installed)",
+"High-torque 15-size brushless outrunner motor",
+"Reliable 40A electronic speed control",
+"(6) Lightweight Spektrum micro servos installed",
+"Accepts 2200mAh 3S 11.1V Li-Po battery packs (sold separately)",
+"Constructed with durable Z-Foam material™",
+"Realistic markings, 5-blade propeller, munition and surface detail",
+"Painted canopy with a clear view of the pilot and cockpit",
+"Quick-release top hatch makes battery changes easy"
+]}

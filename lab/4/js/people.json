@@ -1,0 +1,62 @@
+[
+  {
+    "name": {
+      "first": "Craft",
+      "last": "Berg"
+    },
+    "isActive": true,
+    "balance": "$2,696.47",
+    "picture": "http://placehold.it/32x32",
+    "age": 36,
+    "eyeColor": "brown",
+    "company": "ZOLAR"
+  },
+  {
+    "name": {
+      "first": "Beulah",
+      "last": "Hanson"
+    },
+    "isActive": true,
+    "balance": "$3,794.95",
+    "picture": "http://placehold.it/32x32",
+    "age": 23,
+    "eyeColor": "blue",
+    "company": "ACCEL"
+  },
+  {
+    "name": {
+      "first": "Vazquez",
+      "last": "Sanchez"
+    },
+    "isActive": false,
+    "balance": "$1,224.59",
+    "picture": "http://placehold.it/32x32",
+    "age": 34,
+    "eyeColor": "blue",
+    "company": "COMTEST"
+  },
+  {
+    "name": {
+      "first": "Britt",
+      "last": "Colon"
+    },
+    "isActive": true,
+    "balance": "$1,016.52",
+    "picture": "http://placehold.it/32x32",
+    "age": 34,
+    "eyeColor": "green",
+    "company": "COMBOT"
+  },
+  {
+    "name": {
+      "first": "Nicholson",
+      "last": "Nelson"
+    },
+    "isActive": true,
+    "balance": "$2,762.90",
+    "picture": "http://placehold.it/32x32",
+    "age": 23,
+    "eyeColor": "green",
+    "company": "GENMY"
+  }
+]
