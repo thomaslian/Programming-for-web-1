@@ -1,5 +1,5 @@
 # Programming for web 1
-This repository contains stuff done in programming for web
+Projects from the programming for web course at NTNU (IMT1441).
 
 ## From course 1
 https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
