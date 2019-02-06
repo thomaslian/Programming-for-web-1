@@ -49,46 +49,60 @@ img.zoomable:hover {
   position: absolute;
 }
 
+textarea {
+  width: 80%;
+  height: 30vh;
+}
+
+textarea.listOnTheSide {
+  width: 60%;
+  float: left;
+}
+
+select {
+  width: 35%;
+  height: 30vh;
+  margin-left: 4%;
+}
 code {
   background: lightgrey;
   padding-left: .3em;
   padding-right: 0.3em;
 }
 
-input.short {
-  width: 2em;
+
+.studies {
+  list-style-type: none;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid #e8e8e8;
+  margin: 0;
+  padding: 0;
 }
 
-#vindu {
-  display: none;
-  position: absolute;
-  top: 20vh;
-  left: 20%;
-  height: 10em;
-  width: 40em;
-  background: white;
-  border: 1px solid grey;
-  margin: 1px;
-  border-radius: 3px;
-  box-shadow: 4px 4px 14px rgba(0.2,0.2,0.2,0.5);
-  padding: 0px;
-}
-
-#vindu header {
-  background: lightgrey;
-  padding: 4px 10px;
-  border-bottom: .5px solid grey;
-}
-
-#vindu header div {
-  display: inline-inline-block;
-  float: right;
-  font-family: arial;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-#vindu .content {
+.studies li {
+  font-family: "open sans",arial,sans-serif;
+  line-height: 27px;
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8;
+  border-top: 1px solid transparent;
   padding: 5px;
-  overflow-y: auto;
+}
+
+.studies li:hover {
+  border-bottom: 1px solid #61960b;
+  border-top: 1px solid #61960b;
+  background-color: #EEE;
+}
+
+.studies a {
+  color: #61960b;
+  font-size: 1.2em;
+  text-decoration: none;
+  line-height: 1.5em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+.studies span {
+  display: block;
 }
