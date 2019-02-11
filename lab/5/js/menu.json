@@ -1,0 +1,13 @@
+[
+  {
+    "id": "forside",
+    "html": "Oppgave 1",
+    "js": ""
+
+  },
+  {
+    "id": "oppgave2",
+    "html": "Oppgave 2",
+    "js": "js/oppgave2.js"
+  }
+]

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/default.css">
+</head>
+<body>
+  <nav>
+    <ul>
+    </ul>
+  </nav>
+  <header>
+    <h1>IMT1441 Programmering for web I</h1>
+  </header>
+  <section>
+    <section class="active" id="preface">
+      <p>Last ned <a href="dynamically_loaded_pages.zip">dynamically_loaded_pages.zip</a> og pakk den ut inne i den katalogen som web serveren du bruker har html dokumentene. Åpne index.html i nettleseren på maskinen via webserveren og sjekk av du har to menypunkter.</p>
+      <p>Menyen lages på samme måte som tidligere, hvor menyen hentes fra js/menu.json og settes inn i dynamisk.</p>
+      <p>Vi skal nå utvide dette slik at når brukeren velger et av menyelementene så skal innholdet som vises i <code>body>section</code> byttes ut istedenfor å laste hele siden på nytt. Dersom du prøver å trykke på linken <code>Oppgave 2</code> så vil det komme en feilmelding som sier at siden ikke blir funnet, det er fordi nettleseren prøver å laste inn den siden som linken refererer til.</p>
+      <p>For å unngå dette må vi endre på oppførselen til linker inne i menyen. I menu.js så må en legge til en event lytter på "click" for alle <code>a</code> tagger inne i nav>ul. Inne i denne event lytterutinen så legger du til et kall til event objektets <code>preventDefault</code> metode. Når en nå trykker på en av linkene i menyen så skal det ikke skje noe som helst. Hva gjør <code>preventDefault()</code>?</p>
+      <p>All informasjon på nettstedet ligger i index.html, de ulike sidene ligger i <code>body>section>section</code> elemter, hver av disse har en unik ID. Disse ID'ene ligger også i menu.json filen og du må legge disse inn som <code>data-*</code> attributter i meny linkene. Hvorfor <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes" target="_blank">data-*</a> attributter?.</p>
+      <p>Når brukeren trykker på en menylink så kan du nå sette klassen <code>active</code> på riktig <code>body>section>section</code> og fjerne denne CSS klassen på de andre <code>body>section>section</code> elementene.</p>
+      <p>For å oppdatere aktivt menyelement (vise hvilken side som er den aktive siden) så må en oppdatere <code>active</code> attributten til linkene i menyen. Gå gjennom alle linkene (<code>nav>ul>li>a</code>), for linken som er lik <code><i>event</i>.target</code> så legger en til klassen <code>active</code>, for alle andre linker så fjerner en klassen <code>active</code>.</p>
+      <p>Normalt så er det som står i den første <code>body>section>section</code> taggen det som står på forsiden. I dette tilfellet så er dette bare en introduksjon og det er det som står i section taggen med id=forside som skal vises som forside. Legg til dette i koden.</p>
+    </section>
+    <section id="forside">
+      <h1>Gratulerer</h1>
+      <p>Det dere har nå er det som kalles en Single Page Application, dvs at alt skjer på en og samme side (index.html).</p>
+      <p>index.html inneholder kun teksten på siden, om det brukes JavaScript kode på i en <code>section</code> tag så skal filen med denne koden leses inn når menyvalget gjøres første gangen. Informasjon om hvilken JavaScript fil som skal leses ligger også i menu.json, denne må som ID legges inn som en <<code>data-*</code> attributt.</p>
+      <p>Når et menyvalg gjøres så må en sjekke om det skal leses inn JavaScript, dersom JavaScript skal leses inn så sjekkes om dette allerede er lest inn (finnes en script tag med denne src attributten), hvis ikke så lages en <code>script</code> tag med riktig src attributt og legges til i head på dokumentet.</p>
+      <p>Når denne JavaScript filen leses inn så vil den kjøres akkurat som om den ble inkludert med en vanlig script tag. i <code>oppgave2.js</code> så legger du til JavaScript kode for å vise dato i span taggen med klassen "today".</p>
+      <p>Her brukes koden i metoden som kjøres for å legge inn dagens dato i dokumentet, men en kan også her legge til event håndtering i det dokumentet som akkurat har blitt lagt inn. Dette er det samme som du skal gjøre i innlevering 1.</p>
+      <p>Du er nå klar for å begynne å jobbe med innlevering 1, innlevering 1 er å benytte det du har lært så langt for å lage et nettsted slik som dette.</p>
+    </section>
+    <section id="oppgave2">
+      <h1>Med enda mer JavaScript</h1>
+      <p>I dag er : <span class="today"></span></p>
+    </section>
+  </section>
+  <script>
+    let page = 0;
+  </script>
+  <script src="js/menu.js"></script>
+</body>
+</html>

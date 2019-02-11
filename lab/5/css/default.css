@@ -1,0 +1,57 @@
+body {
+  display: grid;
+  grid-template-columns: auto 600px 200px auto;
+  grid-template-rows: 70px auto;
+}
+
+header {
+  grid-column: 2/3;
+  grid-row: 1/1;
+}
+
+nav {
+  grid-column: 3/3;
+  grid-row: 2/2;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+nav a.active {
+  background-color: #4CAF50; /* Add a green color to the "active/current" link */
+  color: white;
+}
+
+body>section {
+  grid-column: 2/2;
+  grid-row: 2/2;
+}
+
+/* Hide all sections withing the section tag in the body */
+body>section>section {
+  display: none;
+}
+
+/* Show the active section tag withing body>section */
+body>section>section.active {
+  display: block;
+}
+
+code {
+  background: lightgrey;
+  padding-left: .3em;
+  padding-right: 0.3em;
+}
