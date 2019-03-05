@@ -20,7 +20,7 @@ function visKontakter() {
     kontakter.forEach((kontakt, idx) => {
         const li = document.createElement('LI');
         li.innerHTML = kontakt;
-        li.setAttribute('data.idx', idx);
+        li.setAttribute('data-idx', idx);
         kontaktListe.appendChild(li);
     });
 }
