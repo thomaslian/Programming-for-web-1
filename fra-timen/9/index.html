@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Klasser og objekter</title>
+</head>
+<body>
+  <form onsubmit="javascript: return false;">
+    <input type="hidden" name="idx" value="">
+    <label for="fornavn">Fornavn</label><input type="text" id="fornavn" name="fornavn"><br>
+    <label for="etternavn">Etternavn</label><input type="text" id="etternavn" name="etternavn"><br>
+    <label for="tlf">tlf</label><input type="text" id="tlf" name="tlf"><br>
+    <label for="epost">epost</label><input type="text" id="epost" name="epost"><br>
+    <button>Legg til kontakt</button>
+  </form>
+  <ul class="kontakter"></ul>
+  <script src="js/classes/utenKlasser.js" charset="utf-8"></script>
+  <script src="js/classes/medKlasser.js" charset="utf-8"></script>
+  <script src="js/classes/Kontakt.js" charset="utf-8"></script>
+  <script src="js/kontaktRegister.js" charset="utf-8"></script>
+  <script>
+    const mons = new Person("Mons", "Monsen", 54);
+    console.log(mons);
+    // mons._alder = "12";
+    mons.alder = "12";
+    console.log(mons);
+    console.log(mons.fornavn);
+    console.log(mons.sierHei());
+
+    const kontakt = new Kontakt("Ole", "Olsen", "98765432", "ole@olsen.no");
+    console.log(kontakt);
+    console.log(kontakt+"");
+
+    const kontakter = [];
+    kontakter.push(kontakt);
+    console.log(kontakter);
+
+  </script>
+</body>
+</html>

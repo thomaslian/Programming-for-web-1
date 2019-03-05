@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Slideshow</title>
+  <style>
+    code {
+      background: lightgrey;
+      padding-left: .3em;
+      padding-right: 0.3em;
+    }
+    .slideshow {
+      /* en DIV med denne klassen inneholder slideshowet.
+      */
+      position:relative;
+      width: 500px;
+      height: 500px;
+    }
+
+    .slideshow div {
+      /*
+      Det er to DIV tagger inne i den som inneholder slideshowet, en ligger over
+      den andre og den nærmest brukeren brukes for å fade mellom to bilder.
+       */
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: #FFF;
+      opacity: 0;
+      transition: opacity 4s;
+    }
+
+    .slideshow>div:first-child {
+      /*
+      Dette er den bakerste
+       */
+      z-index: 0;
+    }
+
+    .slideshow>div:last-child {
+      /*
+      Dette er den fremste (den som fades inn)
+       */
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="slideshow"></div>
+  <script src="js/slideshow.js" charset="utf-8"></script>
+</body>
+
+</html>
