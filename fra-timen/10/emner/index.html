@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Emner</title>
+  <style>
+    ul.emner {
+      width: 20em;
+      list-style-type: none;
+      border-top: 2px solid grey;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      border-bottom: 1px solid black;
+    }
+    label {
+      display: inline-block;
+      width: 6em;
+    }
+    button {
+      margin-top: .5em;
+      margin-left: 6em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mine emner</h1>
+  <ul class="emner"></ul>
+  <form onsubmit="javascript: return false">
+    <label for="code">Emnekode</label><input type="text" id="code"><br>
+    <label for="name">Emnenavn</label><input type="text" id="name"><br>
+    <button>Legg til</button>
+  </form>
+  <script src="js/Emner1.js" charset="utf-8"></script>
+  <script src="js/default1.js" charset="utf-8"></script>
+</body>
+</html>

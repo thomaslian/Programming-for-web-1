@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>digonal nav</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+  <style>
+    /*
+    CSS and JavaScript for meny effects based on : https://www.youtube.com/watch?v=jGks-v42YRA
+     */
+    html, body {
+      height: 100%;
+    }
+    * {
+      box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+       font-family: 'Roboto Condensed', sans-serif;
+      line-height: 1.7;
+      perspective-origin: 0% 50%;
+      perspective: 800px;
+      background: #21212d;
+
+    }
+    nav, main {
+      transition: transform 150ms ease-out;
+    }
+    nav {
+      z-index: 100;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 16em;
+      background-color: #353441;
+      transform: translateX(-16em);
+    }
+    nav.menu-active {
+      transform: translateX(0);
+    }
+    nav.menu-hover {
+      transform: translateX(-15em);
+    }
+    nav h1 {
+      z-index: 100;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: -65px;
+      height: 60px;
+      width: 65px;
+      line-height: 60px;
+      font-size: 0.8em;
+      font-weight: 300;
+      letter-spacing: 1px;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      background-color: #353441;
+      cursor: pointer;
+    }
+    nav h1:hover {
+      color: #353441;
+      background: #fff;
+    }
+    nav ul {
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      display: inline-block;
+      padding: 0 1em;
+      width: 100%;
+      height: 60px;
+      color: #9dc6d1;
+      line-height: 60px;
+      background-color: #353441;
+        transition: all 0.5s ease-in;
+    }
+    nav li:nth-of-type(2n) {
+      background-color: #3a3947;
+    }
+    nav li:hover {
+      background: ORANGERED;
+        color: white;
+
+    }
+    main {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background-image: url(img/blu_sky.jpg);
+      transform-origin: 0% 50%;
+        background-size: cover;
+    }
+    main:after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(to right, transparent, rgba(33, 33, 45, .5));
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 150ms ease-out, visibility 0s 150ms;
+    }
+    main.menu-active {
+      border-radius: 0.001px;
+      transform: translateX(16em) rotateY(15deg);
+    }
+    main.menu-active:after {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 150ms ease-out, visibility 0s;
+    }
+    main.menu-hover {
+      border-radius: 0.001px;
+      transform: translateX(1em) rotateY(1deg);
+    }
+    main section {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      padding: 1em 4em;
+      max-width: 900px;
+      overflow: auto;
+      background-color: rgba(255, 255, 255, .5);
+    }
+    section h1 {
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 2em;
+    }
+    section p {
+      display: inline-block;
+      margin: 16px 0;
+    }
+
+    /* From here is my own CSS */
+    div.image {
+      background-size: contain;
+      background-repeat:no-repeat;
+      background-position: center;
+      width: 90%;
+      height: 400px;
+    }
+    main>section {
+      display: none;
+    }
+    main>section.active {
+      display: block;
+    }
+    nav li.active{
+      background-color: #252;
+    }
+    nav li a {
+      color: inherit;
+      text-decoration: none;
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <nav class="menu-activea">
+    <h1>NAVBAR</h1>
+    <ul>
+
+    </ul>
+  </nav>
+  <main>
+    <section id="home" class="active">
+     <br><br><br>
+      <h1>Edge 540T</h1>
+      <p>
+        <div>Descripton: Item Name: Edge 540T</div>
+        <div>Vingepanel: 965MM / 38inch</div>
+        <div>Lengde: 972mm / 38.3inch</div>
+        <div>Vingeområde: 21dm²</div>
+        <div>Ta av vekt: ca 615g</div>
+      </p>
+      <div class="image" style="background-image: url(img/edge540t.jpg)"></div>
+    </section>
+    <section id="sbach342">
+      <h1>SBACH 342</h1>
+      <p>
+        <div>Beskrivelse: Merkenavn: Bayer Model</div>
+        <div>Artikkelnavn: Sbach 342</div>
+        <div>Materiale: EPP </div>
+        <div>Farge: Rød, Mørk Blå (valgfri)</div>
+        <div>Vingspenn: 800mm</div>
+        <div>Fuselage Lengde: 780mm</div>
+        <div>KIT Vekt: 85g</div>
+        <div>Startvekt: 220-240g</div>
+      </p>
+      <div class="image" style="background-image: url(img/sbach342_lite.jpg)"></div>
+    </section>
+    <section id="spitfire">
+      <h1>Spitfire</h1>
+      <div class="image" style="background-image: url(img/spitfire.jpg)"></div>
+    </section>
+    <section id="easterdrone">
+      <h1>Drone på påsketur</h1>
+      <div class="image" style="background-image: url(img/paaskedrone.jpg)"></div>
+    </section>
+    <section id="cessna182">
+      <h1>Cessna 182</h1>
+      <div class="image" style="background-image: url(img/cessna182.jpg)"></div>
+    </section>
+    <section id="makingdrones">
+      <h1>Hvordan droner lages</h1>
+      <div class="image" style="background-image: url(img/makingdrones.jpg)"></div>
+    </section>
+    <section id="programmer">
+
+    </section>
+  </main>
+  <script src="js/classes/menu.js" charset="utf-8"></script>
+  <script>
+    new Menu('body>nav>ul', 'body>main>section', 'js/menu.json');
+  </script>
+  <script>
+    /*
+    CSS and JavaScript for meny effects based on : https://www.youtube.com/watch?v=jGks-v42YRA
+     */
+    window.addEventListener('load', e=> {
+      const nav = document.querySelector('nav'),
+        menu = document.querySelector('nav h1'),
+        main = document.querySelector('main');
+      let open = false,
+      	hover = false;
+
+      menu.addEventListener('click', e=> {
+    		open = !open;
+        nav.classList.toggle('menu-active');
+        main.classList.toggle('menu-active');
+        nav.classList.remove('menu-hover');
+        main.classList.remove('menu-hover');
+        console.log(open);
+      });
+
+      menu.addEventListener('mouseenter', e=> {
+        if (!open) {
+        	nav.classList.add('menu-hover');
+        	main.classList.add('menu-hover');
+        }
+      });
+
+      menu.addEventListener('mouseleave', e=> {
+        nav.classList.remove('menu-hover');
+        main.classList.remove('menu-hover');
+      });
+    });
+  </script>
+</body>
+</html>

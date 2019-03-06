@@ -1,0 +1,37 @@
+[
+  {
+    "id": "home",
+    "scriptsrc": "",
+    "menuText": "HOME"
+  },
+  {
+    "id": "sbach342",
+    "scriptsrc": "",
+    "menuText": "SBACH 342"
+  },
+  {
+    "id": "spitfire",
+    "scriptsrc": "",
+    "menuText": "Spitfire"
+  },
+  {
+    "id": "easterdrone",
+    "scriptsrc": "",
+    "menuText": "Påskedrone"
+  },
+  {
+    "id": "cessna182",
+    "scriptsrc": "",
+    "menuText": "Cessna 182"
+  },
+  {
+    "id": "makingdrones",
+    "scriptsrc": "",
+    "menuText": "Lage drone"
+  },
+  {
+    "id": "programmer",
+    "scriptsrc": "js/programmer.js",
+    "menuText": "Programmer"
+  }
+]
