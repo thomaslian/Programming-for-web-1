@@ -1,0 +1,12 @@
+[
+  {
+    "id": "main",
+    "scriptsrc": "",
+    "menuText": "Hovedside"
+  },
+  {
+    "id": "otherPage",
+    "scriptsrc": "js/side2.js",
+    "menuText": "Annen side"
+  }
+]

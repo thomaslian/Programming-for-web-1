@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+
+<body>
+    <form onsubmit="javascript: return false;">
+        <Label for="url">URL</Label><input type="text" id="url" name="url"><br>
+        <Label for="tittel">Tittel</Label><input type="text" id="tittel" name="tittel"><br>
+        <Label for="beskrivelse">Beskrivelse</Label><input type="text" id="beskrivelse" name="beskrivelse"><br>
+        <button>Legg til link</button>
+    </form>
+    <ul class="linker"></ul>
+
+    <script src="js/main.js"></script>
+    <script src="js/classes/Link.js"></script>
+    <script src="js/classes/Linker.js"></script>
+    
+    <script>
+        const link = new Link("google.com", "Google", "Søkemotor");
+        const yahoo = new Link("yahoo.com", "Yahoo!", "Søkemotor");
+        const bing = new Link("bing.com", "Bing", "Søkemotor");
+
+        console.log(link);
+        console.log(link.tittel);
+        link.tittel = "G";
+        console.log(link.tittel);
+
+        const linker = [];
+        linker.push(link);
+        linker.push(yahoo);
+        linker.push(bing);
+
+        const linkObjekt = new Linker("ul.linker", linker);
+        linkObjekt.visLinker();
+    </script>
+</body>
+
+</html>
