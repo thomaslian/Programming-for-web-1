@@ -1,0 +1,191 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body>h1 {
+  display: block;
+  width: 400px;
+  margin: 20px auto;
+}
+
+.handleliste {
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.handleliste span {
+  padding: 5px 20px;
+  display: block;
+  width: 360px;
+  border-bottom: 1px solid #ddd;
+}
+
+.handleliste ul {
+  list-style-type: none;
+  padding:0;
+  margin:0
+}
+
+.handleliste ul li {
+  padding: 5px 20px;
+  display: block;
+  width: 360px;
+  border-bottom: 1px solid #ddd;
+}
+
+.handleliste ul li:hover {
+  background-color: #DDF;
+}
+
+.handleliste span:last-of-type {
+  border-bottom: 0;
+}
+
+.handleliste span:first-of-type {
+  color: #FFF;
+  background: #419639;
+  text-transform: uppercase;
+}
+
+.handleliste span:last-of-type:hover {
+  background-color: #DDF;
+}
+
+.handleliste .leggTil {
+  font-style: italic;
+  color: #555;
+  cursor: default;
+}
+
+.handleliste li, .handlet li {
+  cursor: default;
+}
+
+
+.handlet {
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+}
+
+.handlet span {
+  padding: 5px 20px;
+  display: block;
+  width: 360px;
+  border-bottom: 1px solid #ddd;
+}
+
+.handlet ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.handlet ul li {
+  padding: 5px 20px;
+  display: block;
+  width: 360px;
+  border-top: 1px solid #ddd;
+  text-decoration: line-through;
+}
+
+.handlet ul li:hover {
+  background-color: #DDF;
+}
+
+.handlet span:last-of-type {
+  border-bottom: 0;
+  cursor: default;
+}
+
+.handlet span:first-of-type {
+  background: #8cc63f;
+  font-size: .8em;
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.handlet span:last-of-type:hover {
+  background-color: #DDF;
+}
+
+.handlet .slettHandlet {
+  font-style: italic;
+  color: #555;
+  text-decoration: none;
+}
+
+.nyVare {
+  position: absolute;
+  top: 5em;
+  left: calc(50% - 150px);
+  height: calc(100vh - 15em);
+  max-height: 20em;
+  width: 360px;
+  background: white;
+  border: 1px solid grey;
+  margin: 1px;
+  border-radius: 3px;
+  box-shadow: 4px 4px 14px rgba(0.2,0.2,0.2,0.5);
+  padding; 0px;
+  display: none;
+}
+
+.nyVare header {
+  background: lightgrey;
+  padding: 4px 10px;
+  border-bottom: .5px solid grey;
+}
+
+.nyVare header div {
+  display: inline-inline-block;
+  float: right;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.nyVare .content {
+  padding: 5px;
+  height: calc(100% - 2em);
+}
+
+.nyVare .content form {
+  height: 100%;
+}
+
+.nyVare .content form label {
+  display: inline-block;
+  width: 5em;
+}
+
+.nyVare .content form input {
+  width: 19em;
+}
+
+.nyVare .content .nyvareliste {
+  list-style-type: none;
+  padding: 3px;
+  border: 1px solid #DDD;
+  height: calc(100% - 4em);
+  margin: 4px 0;
+  overflow-y: scroll;
+}
+
+.nyVare .content ul li {
+  padding: 1px 5px;
+}
+
+.nyVare .content ul li:hover {
+  background-color: #DDD;
+}
+
+.nyVare .content button:first-of-type {
+  margin-left: 17em;
+}

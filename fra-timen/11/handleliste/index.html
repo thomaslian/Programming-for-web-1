@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Handleliste</title>
+  <link rel="stylesheet" href="css/default.css">
+</head>
+<body>
+  <h1>Velkommen til handlelisten</h1>
+  <div class="nyVare">
+    <header>Legg til ny vare <div>X</div></header>
+    <div class="content">
+      <form onsubmit="javascript: return false;">
+        <label for="nyvarenavn">Varenavn:</label><input type="text" id="nyvarenavn" autocomplete="off">
+        <ul class="nyvareliste"></ul>
+        <button class="leggTil">Legg til</button> <button class="lukk">Lukk</button>
+      </form>
+    </div>
+  </div>
+  <div class="handleliste">
+    <span>Handleliste</span>
+    <ul>
+    </ul>
+    <span class="leggTil">Legg til vare...</span>
+  </div>
+  <div class="handlet">
+    <span>Har handlet</span>
+    <span class="slettHandlet">Slett alle handlede varer</span>
+    <ul>
+    </ul>
+  </div>
+  <script src="js/Handleliste.js" charset="utf-8"></script>
+  <script src="js/default.js" charset="utf-8"></script>
+</body>
+</html>
